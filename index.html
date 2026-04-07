@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshit Edits | Professional Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+background: linear-gradient(-45deg,#000,#0a0a0a,#001f1f,#000);
+background-size: 400% 400%;
+animation: bg 10s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:70px;
+background:linear-gradient(90deg,#00ffcc,#00aaff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+font-size:20px;
+color:#bbb;
+margin-top:10px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border-radius:30px;
+background:linear-gradient(90deg,#00ffcc,#00aaff);
+color:black;
+border:none;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00ffcc;
+}
+
+/* SECTION */
+section{
+padding:100px 25px;
+text-align:center;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+p{
+font-size:18px;
+color:#ccc;
+line-height:1.6;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+/* CARDS */
+.card{
+border-radius:15px;
+overflow:hidden;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(0,255,204,0.4);
+}
+
+.card iframe{
+width:100%;
+height:220px;
+border:none;
+}
+
+/* SERVICES */
+.service{
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.service:hover{
+transform:scale(1.05);
+background:rgba(0,255,204,0.1);
+}
+
+/* PRICING */
+.price-card{
+margin:10px;
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+transition:0.3s;
+font-size:18px;
+}
+
+.price-card:hover{
+transform:scale(1.05);
+background:rgba(0,255,204,0.1);
+}
+
+/* CONTACT */
+.contact a{
+display:inline-block;
+margin:10px;
+padding:15px 35px;
+border-radius:30px;
+background:linear-gradient(90deg,#00ffcc,#00aaff);
+color:black;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.contact a:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #00ffcc;
+}
+
+/* FOOTER */
+footer{
+padding:25px;
+text-align:center;
+color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<h1>HARSHIT EDITS</h1>
+<p>Professional Video Editor | Cinematic Reels | Content Creator</p>
+<button class="btn" onclick="scrollToWork()">View My Work</button>
+</section>
+
+<!-- ABOUT -->
+<section>
+<h2>About Me</h2>
+<p>
+Hi, I’m Harshit — a passionate video editor focused on creating high-quality cinematic edits and engaging reels.  
+I help creators, influencers, and brands turn their raw clips into visually stunning content that captures attention and boosts engagement.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section>
+<h2>Services</h2>
+<div class="grid">
+<div class="service">🎬 Cinematic Video Editing</div>
+<div class="service">🔥 Instagram Reels Editing</div>
+<div class="service">⚡ Smooth Transitions & Effects</div>
+<div class="service">📈 Content Optimization for Growth</div>
+</div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+<h2>My Work</h2>
+<div class="grid">
+
+<div class="card">
+<iframe src="https://www.youtube.com/embed/HcdidH8WWaU" allowfullscreen></iframe>
+</div>
+
+<div class="card">
+<iframe src="https://www.youtube.com/embed/zL2rvJ2zv1Q" allowfullscreen></iframe>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section>
+<h2>Pricing</h2>
+<div class="price-card">Basic Reel – ₹99</div>
+<div class="price-card">Pro Edit – ₹199</div>
+<div class="price-card">Advanced Cinematic – ₹299</div>
+<p>Custom pricing available for bulk projects</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact Me</h2>
+<p>Let’s create something amazing together 🚀</p>
+<a href="https://www.instagram.com/harshit_edits.18?igsh=NHFtOWRra2cxeTFl" target="_blank">Instagram</a>
+<a href="https://wa.me/9173941428?text=Hi%20Harshit%2C%20I%20want%20video%20editing" target="_blank">WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Harshit Edits | Professional Portfolio
+</footer>
+
+<script>
+function scrollToWork(){
+document.getElementById("work").scrollIntoView({behavior:"smooth"});
+}
+
+const sections=document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top=sec.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
